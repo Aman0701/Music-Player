@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music studio</title>
+    <link rel="stylesheet" href="music.css">
+</head>
+
+<body>
+    <div id="search-field">
+        <input type="text" name="" id="searchSong" class="grey" placeholder="Search for song or playlist..."
+            onkeyup="searchFunction()">
+        <button id="search-song">search</button>
+    </div>
+    <div id="display-song" class="s-blue"></div>
+    <!-- <div id="display-search-song"></div> -->
+    <div id="toggledark">
+
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="checkbox-label p-grey" id="checkbox-label">
+            <span class="ball"></span>
+        </label>
+    </div>
+
+    <div id="main">
+
+
+        <h1>MUSIC PLAYER</h1>
+        <div id="music-display">
+
+            <div id="song-list" class="blue">
+                <div class="left5 top5">
+                    <label for="genre">
+                        <span>Filter by Genre:</span>
+                        <select id="selectSong" name="genre" class="tblue">
+                            <option value="all">All</option>
+                            <option value="hip-hop">Hip Hop</option>
+                            <option value="rock">Rock</option>
+                            <option value="pop">Pop</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="left5 top5">
+                    <h2>All Songs</h2>
+                </div>
+                <div id="song-name" class="left5 top5">
+
+                </div>
+            </div>
+            <div id="song-play" class="blue">
+                <div id="song-info" class="top5 dark-blue">
+                    <img src="image\believe.jpg" id="song-image" class="top5">
+                    <div id="song-detail">
+                        <h2>Believe</h2>
+                        <p> Justin Beiber</p>
+                    </div>
+                </div>
+                <div id="play-button">
+                    <audio controls id="audio" autoplay>
+                        <source src="songs\Justin Bieber - Believe(PagalWorld.com.sb).mp3" type="audio/mp3">
+                    </audio>
+                </div>
+                <div id="song-button">
+                    <button id="backward" class="dblue">
+                        <= </button>
+                            <button id="forward"> =></button>
+                            <button id="add">Add To Playlist</button>
+                            <button id="remove">Remove from Playlist</button>
+                </div>
+            </div>
+            <div id="playlist">
+                <div id="create-playlist">
+                    <input type="text" placeholder="Enter Playlist Name..." class="grey" id="input">
+                    <button>Create Playlist</button>
+                </div>
+                <div id="song-playlist" class="blue">
+                    <h2>Current Playlist</h2>
+                    <div id="current-playlist"> </div>
+                </div>
+                <div id="blank">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="music.js"></script>
+</body>
+
+</html>
