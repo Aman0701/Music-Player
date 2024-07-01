@@ -1,0 +1,320 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #e8e7e6;
+}
+
+button {
+  background-color: #905bfd;
+  border: none;
+}
+
+.blue {
+  background-color: #6bb8de;
+}
+
+.left5 {
+  margin-left: 5%;
+}
+
+.top5 {
+  margin-top: 5%;
+}
+
+.dark {
+  background-color: #565657;
+
+}
+
+.grey {
+  background-color: #e8e7e6
+}
+
+.dark-blue {
+  background-color: #0472aa;
+}
+
+.light-grey {
+  background-color:
+    #263238;
+}
+
+.t-grey {
+  background-color: #64696c;
+}
+
+.pblue {
+  background-color: #3d6f8a;
+}
+
+.tblue {
+  background-color: #3f708a;
+}
+
+.p-grey {
+  background-color: #cbcccc;
+}
+
+.s-blue {
+  background-color: #2196f2;
+}
+
+.dblue {
+  background-color: #c3adf3;
+}
+
+.dark h1,
+.light-grey h2,
+.light-grey p,
+.light-grey span {
+  color: #fff;
+}
+
+select {
+  width: 35%;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #3f708a;
+}
+
+.checkbox {
+  opacity: 0;
+  position: relative;
+}
+
+.checkbox-label {
+
+  width: 90px;
+  height: 30px;
+  border-radius: 60px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  left: 93%;
+  top: -20px;
+}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform .02s linear;
+}
+
+
+.checkbox:checked+.checkbox-label .ball {
+  transform: translateX(24px);
+}
+
+#main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+#music-display {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+#song-list {
+  position: relative;
+  height: 100vh;
+  width: 25%;
+  overflow: scroll;
+  border-radius: 10px;
+}
+
+#song-play {
+  position: relative;
+  /* height: 100vh; */
+  width: 35%;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* border-left: 1px solid black; */
+  box-shadow: 2px 2px 10px 2px;
+}
+
+#playlist {
+  position: relative;
+  /* height: 100vh; */
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+
+}
+
+#song-playlist {
+  width: 75%;
+  height: 90vh;
+  border-radius: 10px;
+  padding-left: 20px;
+  box-shadow: 2px 2px 10px 2px;
+}
+
+#blank {
+  position: relative;
+  /* height: 100vh; */
+  width: 30%;
+  border-radius: 10px;
+}
+
+#song-info {
+  width: 80%;
+  height: 55vh;
+  border-radius: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  box-shadow: 2px 2px 10px 2px;
+}
+
+#song-image {
+  width: 90%;
+  height: 60%;
+  background-color: black;
+  margin-left: 5%;
+}
+
+#play-button audio {
+  width: 400px;
+}
+
+#song-button {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  justify-content: center;
+
+
+}
+
+#song-button button {
+  width: 45%;
+  height: 40%;
+  margin-right: 10px;
+  padding: 5;
+  color: white;
+}
+
+
+
+#create-playlist {
+  height: 10vh;
+  width: 90%;
+}
+
+#create-playlist input {
+  padding: 15px;
+  width: 50%;
+}
+
+#create-playlist button {
+  padding: 10px;
+  width: 30%;
+}
+
+#song-name button {
+  display: block;
+  margin-bottom: 20px;
+  width: 80%;
+  height: 35px;
+  /* background-color: #0472aa; */
+  border-radius: 5px;
+  color: #fff;
+}
+
+#song-detail {
+  margin-left: 8%;
+}
+
+#current-playlist button,
+#all-playlist button {
+  display: block;
+  margin-bottom: 5px;
+  width: 80%;
+  height: 35px;
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+}
+
+#display-song {
+  position: absolute;
+  z-index: 1;
+  background-color: whitesmoke;
+  top: 90px;
+  min-width: 350px;
+  /* max-height: 200px; */
+  overflow: scroll;
+
+}
+
+#display-song::-webkit-scrollbar,
+#song-list::-webkit-scrollbar {
+  display: none;
+}
+
+#search-field {
+  position: relative;
+  top: 50px;
+}
+
+#search-field input {
+  width: 350px;
+  padding: 10px;
+  box-shadow: inset;
+  border-radius: 3px;
+}
+
+#search-field button {
+  width: 100px;
+  padding: 11.5px;
+  border-radius: 3px;
+  margin-left: -3.6px;
+}
+
+#song-name button:hover,
+#current-playlist button:hover,
+#all-playlist button:hover {
+  background-color: transparent;
+}
+
+#display-song p {
+  border-bottom: 1px solid black;
+  height: 30px;
+}
+
+#display-song p:hover {
+  background-color: #6bb8de;
+}
+
+#display-song p span{
+  position: absolute;
+  right: 5%;
+}
